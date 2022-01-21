@@ -1,0 +1,39 @@
+.navbar-custom {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
+  border: 1px solid black;
+}
+
+body {
+  /* border: 1px solid blue; */
+}
+
+body > h1 {
+  margin: 40px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.navbar-custom * {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-bar {
+  display: flex;
+  padding-left: 50px;
+}
+
+.search-bar > button {
+  margin: 20px 20px;
+}
+
+.weather-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.weather-cards > * {
+  margin: min(30px, 2%);
+}
