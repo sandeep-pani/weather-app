@@ -12,10 +12,10 @@ function addNewCard(info) {
     info.weather[0].main +
     '</h6> \
       <p class="card-text">' +
-    info.main.temp +
-    "°F/" +
-    Math.round(((info.main.temp * 5 - 160) / 9) * 100) / 100 +
-    "°C";
+    Math.round((info.main.temp - 273) * 100) / 100 +
+    "°C/" +
+    Math.round((((info.main.temp - 273) * 9) / 5 + 32) * 100) / 100 +
+    "°F";
   ("</p> \
     </div> \
     </div>");
